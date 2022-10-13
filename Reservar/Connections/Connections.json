@@ -1,0 +1,50 @@
+{
+  "3e347083-c6d8-4055-8172-9ac65b9e4a7a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1593/1.0.1593.2980/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3e347083-c6d8-4055-8172-9ac65b9e4a7a"
+  },
+  "df99fa78-ac12-4654-bd0a-85d947ad12ed": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://aseraseo2.sharepoint.com/sites/EXPERIENZA57": {
+        "dataSources": {
+          "TIC": {
+            "tableName": "a06bc80b-101a-4ef6-8792-fa63c57788b4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "TIC"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "df99fa78-ac12-4654-bd0a-85d947ad12ed"
+  }
+}

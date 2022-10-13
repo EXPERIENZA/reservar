@@ -1,0 +1,260 @@
+Screen1 As screen:
+    LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+
+    Label3 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.'Segoe UI'
+        FontSize: =30
+        FontWeight: =FontWeight.Bold
+        Height: =81
+        Text: ="Nueva Reunión"
+        TextRole: ='''Microsoft.CoreControls.Label.TextRole'''.Default
+        Width: =350
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(250, 50, 50, 0.87)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(250, 50, 50, 0.85)
+        FocusedBorderColor: =RGBA(0, 120, 212, 1)
+        Height: =768
+        HoverFill: =RGBA(250, 50, 50, 0.85)
+        PressedFill: =RGBA(250, 50, 50, 0.85)
+        Width: =692
+        X: =674
+        ZIndex: =2
+
+    Label4 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.'Lato Hairline'
+        FontSize: =19
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        Text: ="Detalles"
+        TextRole: ='''Microsoft.CoreControls.Label.TextRole'''.Default
+        Width: =132
+        X: =264
+        Y: =181
+        ZIndex: =3
+
+    "TextBox1 As 'Cuadro de texto'":
+        ColorBackground: =RGBA(244, 244, 243, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Mode: ="SingleLine"
+        Placeholder: ="Titulo De La Reunión"
+        Tooltip: =""
+        Value: =
+        Width: =588
+        X: =60
+        Y: =232
+        ZIndex: =4
+
+    "ComboBox1 As 'Cuadro combinado'.pcfdataset":
+        DisplayMode: =DisplayMode.Edit
+        Height: =27
+        Text: ="Agregar los asistentes requeridos "
+        Width: =588
+        X: =60
+        Y: =288
+        ZIndex: =7
+
+    Label5 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.'Lato Hairline'
+        FontSize: =19
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        Text: ="Hora Inicio"
+        TextRole: ='''Microsoft.CoreControls.Label.TextRole'''.Default
+        Width: =132
+        X: =60
+        Y: =463
+        ZIndex: =8
+
+    Icon2 As icon.Clock:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(250, 50, 50, 0.3)
+        Height: =32
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Clock
+        PaddingBottom: =3
+        PaddingLeft: =3
+        PaddingRight: =3
+        PaddingTop: =3
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =212
+        Y: =472
+        ZIndex: =9
+
+    Icon3 As icon.Clock:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(250, 50, 50, 0.3)
+        Height: =32
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Clock
+        PaddingBottom: =3
+        PaddingLeft: =3
+        PaddingRight: =3
+        PaddingTop: =3
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =440
+        Y: =472
+        ZIndex: =10
+
+    Label6 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.'Lato Hairline'
+        FontSize: =19
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        Text: ="Hora Inicio"
+        TextRole: ='''Microsoft.CoreControls.Label.TextRole'''.Default
+        Width: =132
+        X: =288
+        Y: =462
+        ZIndex: =11
+
+    "TextBox3 As 'Cuadro de texto'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =34
+        Value: ="Duracion"
+        Width: =184
+        X: =60
+        Y: =547
+        ZIndex: =12
+
+    Button2 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(250, 50, 4, 0.91)
+        Font: =Font.Georgia
+        FontSize: =15
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: ="Reservar"
+        Width: =96
+        X: =306
+        Y: =549
+        ZIndex: =13
+
+    Label1 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.'Lato Black'
+        FontSize: =30
+        FontWeight: =FontWeight.Bold
+        Height: =119
+        OnSelect: =false
+        Overflow: ='''Microsoft.CoreControls.Label.Overflow'''.Hidden
+        Text: ="EXPERIENZA S.AS"
+        Width: =422
+        X: =823
+        Y: =240
+        ZIndex: =14
+
+    Label2 As Etiqueta:
+        Alignment: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.'Dancing Script'
+        FontSize: =20
+        FontWeight: =FontWeight.Semibold
+        Height: =119
+        OnSelect: =false
+        Overflow: ='''Microsoft.CoreControls.Label.Overflow'''.Hidden
+        Text: ="""Hacemos parte de tu futuro"""
+        Width: =422
+        X: =823
+        Y: =288
+        ZIndex: =15
+
+    "DatePicker2 As 'Selector de fecha'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =30
+        IconFill: =RGBA(250, 50, 50, 0.87)
+        IconSize: =20
+        PCFTeamsTheme: =TeamsTheme.Default
+        ShowGoToToday: =false
+        Tooltip: =""
+        Visible: =true
+        Width: =588
+        X: =60
+        Y: =401
+        ZIndex: =16
+
+    "ComboBox2 As 'Cuadro combinado'.pcfdataset":
+        AllowMultiSelect: =false
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: =salas
+        Text: ="Sala para reservar"
+        Width: =588
+        X: =60
+        Y: =342
+        ZIndex: =17
+
+        "'SALAS 3' As pcfDataField.textualColumn":
+            FieldDisplayName: ="SALAS "
+            FieldName: ="SALAS "
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =1
+
+    "TextBox2 As 'Cuadro de texto'":
+        ColorBackground: =RGBA(244, 244, 243, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Mode: ="SingleLine"
+        Placeholder: ="Hora Inicio"
+        Tooltip: =""
+        Value: |
+            =
+        Width: =152
+        X: =60
+        Y: =472
+        ZIndex: =18
+
+    "TextBox4 As 'Cuadro de texto'":
+        ColorBackground: =RGBA(244, 244, 243, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Mode: ="SingleLine"
+        Placeholder: ="Hora Final"
+        Tooltip: =""
+        Value: =""
+        Width: =152
+        X: =288
+        Y: =472
+        ZIndex: =19
+

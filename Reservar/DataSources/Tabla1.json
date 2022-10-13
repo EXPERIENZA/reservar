@@ -1,0 +1,16 @@
+[
+  {
+    "Data": "[{\"SALAS \":\"Sala de juntas\"},{\"SALAS \":\"Sala de reuniones \"},{\"SALAS \":\"Sala de capasitaciones \"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Tabla1",
+    "OrderedColumnNames": [
+      "SALAS "
+    ],
+    "OriginalName": "Tabla1",
+    "OriginalSchema": "*['SALAS ':s]",
+    "Schema": "*['SALAS ':s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]
