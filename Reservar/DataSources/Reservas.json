@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr835_reservases",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr835_reservas",
+    "MaxGetRowsCount": 500,
+    "Name": "Reservas",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr835_asistentes": "asistentes",
+      "cr835_duracion": "Duración",
+      "cr835_fecha": "fecha",
+      "cr835_fecha_fin": "fecha_fin",
+      "cr835_hora_inicio": "hora_inicio",
+      "cr835_id_reuniones": "id_reuniones",
+      "cr835_nombre": "Nombre",
+      "cr835_reservas_Annotations": "Notes",
+      "cr835_reservas_AsyncOperations": "System Jobs",
+      "cr835_reservas_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr835_reservas_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr835_reservas_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr835_reservas_ProcessSession": "Process Sessions",
+      "cr835_reservas_SyncErrors": "Sync Errors",
+      "cr835_reservasid": "Reservas",
+      "cr835_sala": "sala",
+      "cr835_titulo": "titulo",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Reservas",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Reservas (Vistas)",
+    "Name": "_cr835_reservas_views",
+    "RelatedEntityName": "Reservas",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2acb6cff-6a4e-458d-802a-61a0cf818592": "Reservas Lookup View",
+      "31373c7c-b5da-4abf-bb7f-7f834bb577d0": "Reservas Associated View",
+      "8e0cc431-27d4-4c9c-b4da-d5fe736fe1c0": "Active Reservas",
+      "e5c922f6-aacd-4bd1-a462-1b116499fb42": "Inactive Reservas",
+      "f606ef12-b1bf-4255-bed8-14ae42d07daf": "Reservas Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Reservas)",
+    "Name": "cr835_reservas_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Reservas"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Reservas",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Reservas)",
+    "Name": "cr835_reservas_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Reservas"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Reservas",
+    "Type": "OptionSetInfo"
+  }
+]

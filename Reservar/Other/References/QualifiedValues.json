@@ -37,6 +37,13 @@
       "Kind": "default.cds_activitypointer_forms",
       "Namespace": "Activities (Formularios)",
       "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr835_reservas_forms",
+      "Namespace": "Reservas (Formularios)",
+      "Values": {
+        "Information": "05b1a62a-7e2e-4e71-85b1-879926d61152"
+      }
     }
   ]
 }
