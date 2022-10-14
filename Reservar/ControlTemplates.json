@@ -13,19 +13,20 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "button": {
+  "Botón": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/button",
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
+    "IsPcfControl": true,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
+    "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "button",
+    "Name": "Microsoft_CoreControls_Button",
     "OverridableProperties": {},
-    "Version": "2.2.0"
+    "TemplateDisplayName": "Botón",
+    "Version": "1.5.2"
   },
   "Cuadro combinado": {
     "CustomGroupControlTemplateName": "",

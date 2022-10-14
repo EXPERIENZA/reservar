@@ -266,33 +266,6 @@ form_Reserva As screen:
         Y: =328
         ZIndex: =25
 
-    Button1 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(200, 198, 196, 1)
-        DisabledFill: =RGBA(243, 242, 241, 1)
-        Fill: =RGBA(98, 100, 167, 1)
-        FocusedBorderThickness: =2
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(98, 100, 167, 1), -10%)
-        OnSelect: =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final)
-        PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
-        RadiusBottomLeft: =3
-        RadiusBottomRight: =3
-        RadiusTopLeft: =3
-        RadiusTopRight: =3
-        Size: =10.5
-        Text: ="Botón"
-        X: =278
-        Y: =583
-        ZIndex: =26
-
     Hora_Inicio As text:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
@@ -352,4 +325,14 @@ form_Reserva As screen:
         X: =278
         Y: =472
         ZIndex: =28
+
+    Button1 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,Asistencia,Asistencia)
+        Width: =96
+        X: =306
+        Y: =549
+        ZIndex: =29
 
