@@ -12,7 +12,7 @@
     "fondo_Rojo": 5,
     "form_Reserva": 4,
     "Hora_Final": 18,
-    "Hora_Inicio": 16,
+    "Hora_Inicio": 26,
     "ico.reloj2": 19,
     "ico_reloj": 17,
     "Nueva_Reunión": 6,
@@ -26,7 +26,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/14/2022 18:08:26",
+  "HeaderLastSavedDateTimeUTC": "10/14/2022 20:15:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "23d6f356-f43d-4985-94e1-aa36af10660d": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-a5495fc4-b4dd-403d-a556-1735b4bb7a0c\"",
@@ -201,7 +201,7 @@
       "pcfDataField": 1,
       "rectangle": 1,
       "screen": 1,
-      "text": 5
+      "text": 6
     },
     "DeserializationLoadTime": 2.579392,
     "ErrorCount": 0

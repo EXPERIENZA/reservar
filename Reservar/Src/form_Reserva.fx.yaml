@@ -266,36 +266,6 @@ form_Reserva As screen:
         Y: =328
         ZIndex: =25
 
-    Hora_Inicio As text:
-        BorderColor: =RGBA(243, 242, 241, 1)
-        BorderThickness: =2
-        Color: =RGBA(37, 36, 35, 1)
-        Default: ="hora inicio"
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(200, 198, 196, 1)
-        DisabledFill: =RGBA(243, 242, 241, 1)
-        Fill: =RGBA(243, 242, 241, 1)
-        FocusedBorderColor: =RGBA(98, 100, 167, 1)
-        FocusedBorderThickness: =2
-        Font: =Font.'Segoe UI'
-        Height: =32
-        HintText: ="text"
-        HoverBorderColor: =RGBA(243, 242, 241, 1)
-        HoverColor: =RGBA(37, 36, 35, 1)
-        HoverFill: =RGBA(243, 242, 241, 1)
-        PressedBorderColor: =RGBA(98, 100, 167, 1)
-        PressedColor: =RGBA(37, 36, 35, 1)
-        PressedFill: =RGBA(243, 242, 241, 1)
-        RadiusBottomLeft: =3
-        RadiusBottomRight: =3
-        RadiusTopLeft: =3
-        RadiusTopRight: =3
-        Size: =10.5
-        Width: =152
-        X: =60
-        Y: =472
-        ZIndex: =27
-
     Hora_Final As text:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
@@ -331,8 +301,41 @@ form_Reserva As screen:
         Height: =32
         OnSelect: |
             =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,Asistencia,Asistencia)
+        Text: ="Reservar"
         Width: =96
         X: =306
         Y: =549
         ZIndex: =29
+
+    Hora_Inicio As text:
+        BorderColor: =RGBA(243, 242, 241, 1)
+        BorderThickness: =2
+        Color: =RGBA(37, 36, 35, 1)
+        Default: =format
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(200, 198, 196, 1)
+        DisabledFill: =RGBA(243, 242, 241, 1)
+        Fill: =RGBA(243, 242, 241, 1)
+        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Font: =Font.'Segoe UI'
+        Height: =32
+        HintText: ="hora Inicio"
+        HoverBorderColor: =RGBA(243, 242, 241, 1)
+        HoverColor: =RGBA(37, 36, 35, 1)
+        HoverFill: =RGBA(243, 242, 241, 1)
+        OnChange: |-
+            =Set(format,Text&":"&Text)
+        PressedBorderColor: =RGBA(98, 100, 167, 1)
+        PressedColor: =RGBA(37, 36, 35, 1)
+        PressedFill: =RGBA(243, 242, 241, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =10.5
+        Width: =152
+        X: =60
+        Y: =472
+        ZIndex: =30
 
