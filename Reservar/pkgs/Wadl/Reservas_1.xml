@@ -9,6 +9,7 @@
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadeinicio_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadefinalizaci_uxF3_n_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Ubicaci_uxF3_n_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Ubicaci_uxF3_n_1_def" />
       <object name="ManualTriggerInput">
         <property name="Sendanemail_To" type="string" />
         <property name="Sendanemail_Subject" type="string" />
@@ -17,6 +18,7 @@
         <property name="Crearevento(V4)_Horadeinicio" type="string" />
         <property name="Crearevento(V4)_Horadefinalización" type="string" />
         <property name="Crearevento(V4)_Ubicación" type="string" />
+        <property name="Crearevento(V4)_Ubicación_1" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -37,6 +39,7 @@
             <param style="plain" name="Crearevento(V4)_Horadeinicio" path="/Crearevento(V4)_Horadeinicio" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Horadefinalización" path="/Crearevento(V4)_Horadefinalización" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Ubicación" path="/Crearevento(V4)_Ubicación" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Ubicación_1" path="/Crearevento(V4)_Ubicación_1" type="xs:string" required="true" />
           </representation>
         </request>
       </method>

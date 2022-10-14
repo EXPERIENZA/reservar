@@ -27,8 +27,8 @@ form_Reserva As screen:
         Height: =768
         HoverFill: =RGBA(250, 50, 50, 0.85)
         PressedFill: =RGBA(250, 50, 50, 0.85)
-        Width: =692
-        X: =674
+        Width: =670
+        X: =696
         ZIndex: =2
 
     Detalles As Etiqueta:
@@ -279,7 +279,7 @@ form_Reserva As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(98, 100, 167, 1), -10%)
-        OnSelect: =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final)
+        OnSelect: =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,Duración,Duración)
         PressedBorderColor: =ColorFade(RGBA(98, 100, 167, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(98, 100, 167, 1), -30%)
