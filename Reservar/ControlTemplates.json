@@ -13,20 +13,19 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "Botón": {
+  "button": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
+    "Id": "http://microsoft.com/appmagic/button",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
+    "IsPcfControl": false,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
+    "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_Button",
+    "Name": "button",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Botón",
-    "Version": "1.5.2"
+    "Version": "2.2.0"
   },
   "Cuadro combinado": {
     "CustomGroupControlTemplateName": "",
@@ -258,5 +257,19 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "Selector de fecha",
     "Version": "1.5.1"
+  },
+  "text": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/text",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "text",
+    "OverridableProperties": {},
+    "Version": "2.3.2"
   }
 }

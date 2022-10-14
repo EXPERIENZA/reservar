@@ -14,28 +14,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1"
+                  "fullyQualifiedName": "form_Reserva.Button1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1",
+                  "fullyQualifiedName": "form_Reserva.Button1.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 99,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Reservas_1.Run(Asistencia;Titulo_Reunión;descripcion_Reunión;Titulo_Reunión;Hora_Inicio;Hora_Final)"
+                  }
                 }
               },
               "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
+                "member": "OnSelect",
+                "module": "form_Reserva",
+                "type": "form_Reserva.Button1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "6",
+              "7"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "High"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleId": "app-ErrBadArity",
           "ruleIndex": 0
         },
         {
@@ -43,19 +55,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Rectangle1.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.fondo_Rojo.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Rectangle1.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.fondo_Rojo.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Rectangle1"
+                "module": "form_Reserva",
+                "type": "form_Reserva.fondo_Rojo"
               }
             }
           ],
@@ -73,19 +85,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Rectangle1.TabIndex"
+                  "fullyQualifiedName": "form_Reserva.fondo_Rojo.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Rectangle1.TabIndex",
+                  "fullyQualifiedName": "form_Reserva.fondo_Rojo.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen1",
-                "type": "Screen1.Rectangle1"
+                "module": "form_Reserva",
+                "type": "form_Reserva.fondo_Rojo"
               }
             }
           ],
@@ -103,19 +115,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextBox1.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.descripcion_Reunión.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextBox1.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.descripcion_Reunión.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.TextBox1"
+                "module": "form_Reserva",
+                "type": "form_Reserva.descripcion_Reunión"
               }
             }
           ],
@@ -133,19 +145,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Salas.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Salas.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.ComboBox1"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Salas"
               }
             }
           ],
@@ -163,19 +175,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.ComboBox2.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Calendario.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.ComboBox2.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Calendario.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.ComboBox2"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Calendario"
               }
             }
           ],
@@ -193,19 +205,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.DatePicker2.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.DatePicker2.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.DatePicker2"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Hora_Final"
               }
             }
           ],
@@ -223,19 +235,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextBox2.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextBox2.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.TextBox2"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Hora_Inicio"
               }
             }
           ],
@@ -253,19 +265,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextBox4.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Duración.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextBox4.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Duración.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.TextBox4"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Duración"
               }
             }
           ],
@@ -283,19 +295,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextBox3.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextBox3.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.TextBox3"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Outlook"
               }
             }
           ],
@@ -313,19 +325,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Button2.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Titulo_Reunión.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Button2.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Titulo_Reunión.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Button2"
+                "module": "form_Reserva",
+                "type": "form_Reserva.Titulo_Reunión"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "form_Reserva.Asistencia.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "form_Reserva.Asistencia.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "form_Reserva",
+                "type": "form_Reserva.Asistencia"
               }
             }
           ],
@@ -345,20 +387,17 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "acc-ReadableScreenNameNeeded",
+              "id": "app-ErrBadArity",
               "messageStrings": {
                 "issue": {
-                  "text": "Revise screen name"
+                  "text": "Invalid number of arguments: received {0}, expected {1}."
                 }
               },
               "properties": {
                 "componentType": "app",
-                "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
               }
             },
             {

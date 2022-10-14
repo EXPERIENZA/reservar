@@ -1,0 +1,53 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Reservas" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Reservas" />
+  <grammars>
+    <jsonTypes targetNamespace="https://brazil-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_Sendanemail_To_def" />
+      <string name="ManualTriggerInput_Sendanemail_Subject_def" />
+      <string name="ManualTriggerInput_Sendanemail_Body_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadeinicio_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadefinalizaci_uxF3_n_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Ubicaci_uxF3_n_def" />
+      <object name="ManualTriggerInput">
+        <property name="Sendanemail_To" type="string" />
+        <property name="Sendanemail_Subject" type="string" />
+        <property name="Sendanemail_Body" type="string" />
+        <property name="Crearevento(V4)_Asunto" type="string" />
+        <property name="Crearevento(V4)_Horadeinicio" type="string" />
+        <property name="Crearevento(V4)_Horadefinalización" type="string" />
+        <property name="Crearevento(V4)_Ubicación" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://brazil-001.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Sendanemail_To" path="/Sendanemail_To" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail_Subject" path="/Sendanemail_Subject" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail_Body" path="/Sendanemail_Body" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Asunto" path="/Crearevento(V4)_Asunto" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Horadeinicio" path="/Crearevento(V4)_Horadeinicio" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Horadefinalización" path="/Crearevento(V4)_Horadefinalización" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Ubicación" path="/Crearevento(V4)_Ubicación" type="xs:string" required="true" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
