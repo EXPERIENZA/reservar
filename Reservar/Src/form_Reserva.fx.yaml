@@ -349,3 +349,11 @@ form_Reserva As screen:
         Y: =328
         ZIndex: =31
 
+        Mail1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Mail"
+            FieldName: ="Mail"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =2
+
