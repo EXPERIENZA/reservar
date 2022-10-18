@@ -261,7 +261,7 @@ form_Reserva As screen:
         RadiusTopLeft: =3
         RadiusTopRight: =3
         Size: =10.5
-        Width: =173
+        Width: =204
         X: =60
         Y: =327
         ZIndex: =25
@@ -341,12 +341,13 @@ form_Reserva As screen:
 
     "Correos As 'Cuadro combinado'.pcfdataset":
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        Height: =33
         Items: |-
             =UsuariosdeOffice365.SearchUser({searchTerm:Asistencia.Text,Top:100})
-        Width: =320
-        X: =244
-        Y: =328
+        OnChange: =
+        Width: =370
+        X: =278
+        Y: =327
         ZIndex: =31
 
         Mail1 As pcfDataField.textualColumn:
