@@ -339,3 +339,13 @@ form_Reserva As screen:
         Y: =472
         ZIndex: =30
 
+    "Correos As 'Cuadro combinado'.pcfdataset":
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: |-
+            =UsuariosdeOffice365.SearchUser({searchTerm:Asistencia.Text,Top:100})
+        Width: =320
+        X: =244
+        Y: =328
+        ZIndex: =31
+
