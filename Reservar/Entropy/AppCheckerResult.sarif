@@ -314,19 +314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "form_Reserva",
-                "type": "form_Reserva.Outlook"
+                "type": "form_Reserva.Button1"
               }
             }
           ],
@@ -344,19 +344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "form_Reserva",
-                "type": "form_Reserva.Button1"
+                "type": "form_Reserva.Outlook"
               }
             }
           ],

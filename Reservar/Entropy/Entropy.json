@@ -4,7 +4,7 @@
   "ControlUniqueIds": {
     "App": 1,
     "Asistencia": 12,
-    "Button1": 23,
+    "Button1": 21,
     "Calendario": 15,
     "descripcion_Reunión": 8,
     "Detalles": 7,
@@ -12,7 +12,7 @@
     "fondo_Rojo": 5,
     "form_Reserva": 4,
     "Hora_Final": 18,
-    "Hora_Inicio": 26,
+    "Hora_Inicio": 16,
     "ico.reloj2": 19,
     "ico_reloj": 17,
     "Nueva_Reunión": 6,
@@ -26,13 +26,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/14/2022 20:15:40",
+  "HeaderLastSavedDateTimeUTC": "10/18/2022 16:57:44",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "23d6f356-f43d-4985-94e1-aa36af10660d": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-a5495fc4-b4dd-403d-a556-1735b4bb7a0c\"",
     "3e347083-c6d8-4055-8172-9ac65b9e4a7a": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/de8fc69966984957860dcd6337873fd5\"",
     "829c4fbc-dae5-4ad3-a9aa-c920249c8a6a": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-3564fd3f-34f2-4a0c-8bc8-61f653acb097\"",
-    "a53b479b-219f-48a8-9899-8ac334a36c4e": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/0a7e3ef8f7224e7bac1fe335d3b37d2c-d6d08fa7d39f0e56\"",
+    "a53b479b-219f-48a8-9899-8ac334a36c4e": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/0a7e3ef8-f722-4e7b-ac1f-e335d3b37d2c\"",
     "df99fa78-ac12-4654-bd0a-85d947ad12ed": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/395e5d6376704e809a21162d371200e6\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
@@ -189,11 +189,11 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1516499,
+    "AnalysisLoadTime": 0.1367291,
     "ControlCount": {
-      "button": 1,
       "hostControl": 1,
       "icon": 2,
+      "Microsoft_CoreControls_Button": 1,
       "Microsoft_CoreControls_ComboBox": 2,
       "Microsoft_CoreControls_DatePicker": 1,
       "Microsoft_CoreControls_Label": 4,
@@ -201,9 +201,9 @@
       "pcfDataField": 1,
       "rectangle": 1,
       "screen": 1,
-      "text": 6
+      "text": 5
     },
-    "DeserializationLoadTime": 2.579392,
+    "DeserializationLoadTime": 2.4171079,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false

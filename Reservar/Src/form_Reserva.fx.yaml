@@ -180,7 +180,7 @@ form_Reserva As screen:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
         Color: =RGBA(37, 36, 35, 1)
-        Default: ="Entrada de texto"
+        Default: =""
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(200, 198, 196, 1)
         DisabledFill: =RGBA(243, 242, 241, 1)
@@ -189,7 +189,7 @@ form_Reserva As screen:
         FocusedBorderThickness: =2
         Font: =Font.'Segoe UI'
         Height: =32
-        HintText: ="text"
+        HintText: ="Titulo Reunión"
         HoverBorderColor: =RGBA(243, 242, 241, 1)
         HoverColor: =RGBA(37, 36, 35, 1)
         HoverFill: =RGBA(243, 242, 241, 1)
@@ -210,7 +210,7 @@ form_Reserva As screen:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
         Color: =RGBA(37, 36, 35, 1)
-        Default: ="Entrada de texto"
+        Default: =""
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(200, 198, 196, 1)
         DisabledFill: =RGBA(243, 242, 241, 1)
@@ -219,7 +219,7 @@ form_Reserva As screen:
         FocusedBorderThickness: =2
         Font: =Font.'Segoe UI'
         Height: =34
-        HintText: ="text"
+        HintText: ="Descripción Reunión"
         HoverBorderColor: =RGBA(243, 242, 241, 1)
         HoverColor: =RGBA(37, 36, 35, 1)
         HoverFill: =RGBA(243, 242, 241, 1)
@@ -240,7 +240,7 @@ form_Reserva As screen:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
         Color: =RGBA(37, 36, 35, 1)
-        Default: ="Entrada de texto"
+        Default: =""
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(200, 198, 196, 1)
         DisabledFill: =RGBA(243, 242, 241, 1)
@@ -249,7 +249,7 @@ form_Reserva As screen:
         FocusedBorderThickness: =2
         Font: =Font.'Segoe UI'
         Height: =33
-        HintText: ="text"
+        HintText: ="Busqueda"
         HoverBorderColor: =RGBA(243, 242, 241, 1)
         HoverColor: =RGBA(37, 36, 35, 1)
         HoverFill: =RGBA(243, 242, 241, 1)
@@ -261,9 +261,9 @@ form_Reserva As screen:
         RadiusTopLeft: =3
         RadiusTopRight: =3
         Size: =10.5
-        Width: =588
+        Width: =173
         X: =60
-        Y: =328
+        Y: =327
         ZIndex: =25
 
     Hora_Final As text:
