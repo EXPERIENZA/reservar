@@ -203,7 +203,7 @@ form_Reserva As screen:
         Size: =10.5
         Width: =588
         X: =60
-        Y: =280
+        Y: =232
         ZIndex: =22
 
     descripcion_Reunión As text:
@@ -233,7 +233,7 @@ form_Reserva As screen:
         Size: =10.5
         Width: =588
         X: =60
-        Y: =229
+        Y: =275
         ZIndex: =23
 
     Asistencia As text:
@@ -311,7 +311,7 @@ form_Reserva As screen:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
         Color: =RGBA(37, 36, 35, 1)
-        Default: =format
+        Default: =
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(200, 198, 196, 1)
         DisabledFill: =RGBA(243, 242, 241, 1)
@@ -345,8 +345,8 @@ form_Reserva As screen:
         Items: |-
             =UsuariosdeOffice365.SearchUser({searchTerm:Asistencia.Text,Top:100})
         OnChange: =
-        Width: =370
-        X: =278
+        Width: =384
+        X: =264
         Y: =327
         ZIndex: =31
 
