@@ -65,8 +65,8 @@ form_Reserva As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =32
-        X: =212
-        Y: =592
+        X: =414
+        Y: =549
         ZIndex: =9
 
     "'ico.reloj2' As icon.Clock":
@@ -88,17 +88,17 @@ form_Reserva As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =32
-        X: =440
-        Y: =592
+        X: =610
+        Y: =549
         ZIndex: =10
 
     "Duración As 'Cuadro de texto'":
         DisplayMode: =DisplayMode.Edit
-        Height: =34
+        Height: =25
         Value: ="Duracion"
-        Width: =184
-        X: =59
-        Y: =637
+        Width: =188
+        X: =258
+        Y: =601
         ZIndex: =12
 
     tl_Experienza As Etiqueta:
@@ -135,16 +135,16 @@ form_Reserva As screen:
 
     "Calendario As 'Selector de fecha'":
         DisplayMode: =DisplayMode.Edit
-        Height: =30
+        Height: =32
         IconFill: =RGBA(250, 50, 50, 0.87)
         IconSize: =20
         PCFTeamsTheme: =TeamsTheme.Default
         ShowGoToToday: =false
         Tooltip: =""
         Visible: =true
-        Width: =588
-        X: =60
-        Y: =538
+        Width: =188
+        X: =59
+        Y: =549
         ZIndex: =16
 
     "Salas As 'Cuadro combinado'.pcfdataset":
@@ -155,7 +155,7 @@ form_Reserva As screen:
         Text: ="Sala para reservar"
         Width: =588
         X: =60
-        Y: =489
+        Y: =506
         ZIndex: =17
 
         "'SALAS 3' As pcfDataField.textualColumn":
@@ -292,8 +292,8 @@ form_Reserva As screen:
         RadiusTopRight: =3
         Size: =10.5
         Width: =152
-        X: =278
-        Y: =592
+        X: =458
+        Y: =549
         ZIndex: =28
 
     Button1 As Botón:
@@ -335,8 +335,8 @@ form_Reserva As screen:
         RadiusTopRight: =3
         Size: =10.5
         Width: =152
-        X: =60
-        Y: =592
+        X: =262
+        Y: =549
         ZIndex: =30
 
     "Correos As 'Cuadro combinado'.pcfdataset":
@@ -364,7 +364,7 @@ form_Reserva As screen:
         DelayItemLoading: =true
         FocusedBorderColor: =RGBA(98, 100, 167, 1)
         FocusedBorderThickness: =2
-        Height: =118
+        Height: =100
         Items: =List
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -416,6 +416,31 @@ form_Reserva As screen:
             Y: =0
             ZIndex: =4
 
+        Icon1 As icon.Trash:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(98, 100, 167, 1)
+            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Trash
+            OnSelect: |
+                =Remove(List, ThisItem)
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =32
+            X: =482
+            Y: =8
+            ZIndex: =5
+
     Button3 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =32
@@ -443,4 +468,14 @@ form_Reserva As screen:
         X: =60
         Y: =164
         ZIndex: =35
+
+    Button5 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =20
+        OnSelect: =Clear(List)
+        Text: ="Limpiar"
+        Width: =80
+        X: =300
+        Y: =471
+        ZIndex: =36
 
