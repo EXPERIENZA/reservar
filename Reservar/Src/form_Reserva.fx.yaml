@@ -300,7 +300,7 @@ form_Reserva As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
-            =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,Asistencia,Asistencia)
+            =Reservas_1.Run(CorreoGaleria,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,CorreoGaleria,CorreoGaleria)
         Text: ="Reservar"
         Width: =96
         X: =300
@@ -388,7 +388,7 @@ form_Reserva As screen:
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
-        Title1 As Etiqueta:
+        CorreoGaleria As Etiqueta:
             DisplayMode: =DisplayMode.Edit
             FontSize: =10.5
             FontWeight: =FontWeight.Semibold
@@ -402,7 +402,7 @@ form_Reserva As screen:
             Y: =12
             ZIndex: =3
 
-        Subtitle1 As Etiqueta:
+        "'nombre user' As Etiqueta":
             DisplayMode: =DisplayMode.Edit
             FontSize: =9
             FontWeight: =FontWeight.Normal
@@ -411,8 +411,8 @@ form_Reserva As screen:
             TabIndex: =-1
             Text: =ThisItem.Mail.DisplayName
             VerticalAlignment: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
+            Width: =CorreoGaleria.Width
+            X: =CorreoGaleria.X
             Y: =0
             ZIndex: =4
 
@@ -465,8 +465,8 @@ form_Reserva As screen:
             ="https://www.youtube.com/watch?v=X7pTa3_7WpI
             https://learn.microsoft.com/es-mx/power-apps/maker/canvas-apps/create-update-collection"
         Width: =320
-        X: =60
-        Y: =164
+        X: =70
+        Y: =121
         ZIndex: =35
 
     Button5 As Botón:
