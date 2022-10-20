@@ -166,16 +166,6 @@ form_Reserva As screen:
             Order: =1
             ZIndex: =1
 
-    "Outlook As 'Cuadro combinado'.pcfdataset":
-        DisplayMode: =DisplayMode.Edit
-        Height: =27
-        Items: =
-        Text: =
-        Width: =588
-        X: =9
-        Y: =702
-        ZIndex: =20
-
     Titulo_Reunión As text:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
@@ -300,7 +290,7 @@ form_Reserva As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
-            =Reservas_1.Run(CorreoGaleria,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,CorreoGaleria,CorreoGaleria)
+            =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,CorreoGaleria,CorreoGaleria)
         Text: ="Reservar"
         Width: =96
         X: =300

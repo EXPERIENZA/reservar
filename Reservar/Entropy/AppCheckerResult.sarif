@@ -464,36 +464,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "form_Reserva.Outlook.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "form_Reserva",
-                "type": "form_Reserva.Outlook"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "form_Reserva.Button3.AccessibleLabel"
                 }
               ],
