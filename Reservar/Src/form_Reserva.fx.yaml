@@ -134,6 +134,7 @@ form_Reserva As screen:
         ZIndex: =15
 
     "Calendario As 'Selector de fecha'":
+        AllowTextInput: =false
         DisplayMode: =DisplayMode.Edit
         Height: =32
         IconFill: =RGBA(250, 50, 50, 0.87)

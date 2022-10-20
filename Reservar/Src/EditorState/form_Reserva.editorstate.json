@@ -584,6 +584,14 @@
           "InvariantPropertyName": "IconFill",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "AllowTextInput",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -617,6 +625,11 @@
         {
           "Category": "Data",
           "PropertyName": "ShowGoToToday",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AllowTextInput",
           "RuleProviderType": "Unknown"
         },
         {
