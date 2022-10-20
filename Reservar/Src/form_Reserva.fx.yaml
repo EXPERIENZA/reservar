@@ -155,7 +155,7 @@ form_Reserva As screen:
         Text: ="Sala para reservar"
         Width: =588
         X: =60
-        Y: =372
+        Y: =489
         ZIndex: =17
 
         "'SALAS 3' As pcfDataField.textualColumn":
@@ -240,8 +240,7 @@ form_Reserva As screen:
         BorderColor: =RGBA(243, 242, 241, 1)
         BorderThickness: =2
         Color: =RGBA(37, 36, 35, 1)
-        Default: |-
-            ="https://www.youtube.com/watch?v=SRKHfv4XYJE"
+        Default: =
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(200, 198, 196, 1)
         DisabledFill: =RGBA(243, 242, 241, 1)
@@ -263,7 +262,7 @@ form_Reserva As screen:
         RadiusTopRight: =3
         Size: =10.5
         Width: =110
-        X: =133
+        X: =59
         Y: =327
         ZIndex: =25
 
@@ -342,12 +341,13 @@ form_Reserva As screen:
 
     "Correos As 'Cuadro combinado'.pcfdataset":
         DisplayMode: =DisplayMode.Edit
-        Height: =33
+        Height: =32
         Items: |-
             =UsuariosdeOffice365.SearchUser({searchTerm:Asistencia.Text,Top:100})
         OnChange: =
-        Width: =384
-        X: =264
+        OnSelect: =
+        Width: =367
+        X: =185
         Y: =327
         ZIndex: =31
 
@@ -359,30 +359,20 @@ form_Reserva As screen:
             Order: =1
             ZIndex: =2
 
-    Label1 As Etiqueta:
-        DisplayMode: =DisplayMode.Edit
-        Height: =33
-        Text: |-
-            ="Add:"
-        Width: =73
-        X: =60
-        Y: =327
-        ZIndex: =32
-
     Gallery1 As gallery.BrowseLayout_Vertical_TwoTextOneImageVariant_pcfCore:
         BorderColor: =RGBA(243, 242, 241, 1)
         DelayItemLoading: =true
         FocusedBorderColor: =RGBA(98, 100, 167, 1)
         FocusedBorderThickness: =2
-        Height: =105
-        Items: |-
-            =UsuariosdeOffice365.SearchUser({searchTerm:Asistencia.Text,Top:6})
+        Height: =118
+        Items: =List
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =48
+        Width: =588
         X: =60
-        Y: =420
+        Y: =371
         ZIndex: =33
 
         Rectangle1 As rectangle:
@@ -398,27 +388,6 @@ form_Reserva As screen:
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
-        Image1 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            Height: =28
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =3
-            RadiusBottomRight: =3
-            RadiusTopLeft: =3
-            RadiusTopRight: =3
-            Width: =28
-            X: =12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
-
         Title1 As Etiqueta:
             DisplayMode: =DisplayMode.Edit
             FontSize: =10.5
@@ -426,11 +395,11 @@ form_Reserva As screen:
             Height: =24
             OnSelect: =Select(Parent)
             TabIndex: =-1
-            Text: =ThisItem.City
+            Text: =ThisItem.Mail.Mail
             VerticalAlignment: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Self.X - 8
-            X: =Image1.X + Image1.Width + 12
-            Y: =((Parent.TemplateHeight - 36) / 2) - 4
+            X: =
+            Y: =12
             ZIndex: =3
 
         Subtitle1 As Etiqueta:
@@ -440,10 +409,38 @@ form_Reserva As screen:
             Height: =24
             OnSelect: =Select(Parent)
             TabIndex: =-1
-            Text: =ThisItem.CompanyName
+            Text: =ThisItem.Mail.DisplayName
             VerticalAlignment: =VerticalAlign.Top
             Width: =Title1.Width
             X: =Title1.X
-            Y: =Title1.Y + Title1.Height - 6
+            Y: =0
             ZIndex: =4
+
+    Button3 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |-
+            =Collect(
+                List,
+                {
+                    Mail: Correos.Selected
+                }
+            )
+        Text: ="Invitar"
+        Width: =87
+        X: =561
+        Y: =327
+        ZIndex: =34
+
+    Label1 As Etiqueta:
+        DisplayMode: =DisplayMode.Edit
+        FontWeight: =FontWeight.Lighter
+        Height: =32
+        Text: |-
+            ="https://www.youtube.com/watch?v=X7pTa3_7WpI
+            https://learn.microsoft.com/es-mx/power-apps/maker/canvas-apps/create-update-collection"
+        Width: =320
+        X: =60
+        Y: =164
+        ZIndex: =35
 

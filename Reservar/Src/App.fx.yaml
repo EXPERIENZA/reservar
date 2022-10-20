@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: =
 
     Teams As hostControl.TeamsHostControlVariant:
         OnCancel: =false
