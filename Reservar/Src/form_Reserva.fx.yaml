@@ -16,6 +16,72 @@ form_Reserva As screen:
         Y: =40
         ZIndex: =1
 
+    Gallery2 As gallery.BrowseLayout_Vertical_OneTextVariant_pcfCore:
+        BorderColor: =RGBA(243, 242, 241, 1)
+        DelayItemLoading: =true
+        FocusedBorderColor: =RGBA(98, 100, 167, 1)
+        FocusedBorderThickness: =2
+        Height: =37
+        Items: =Fechas
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =33
+        Width: =172
+        X: =407
+        Y: =547
+        ZIndex: =1
+
+        Rectangle4 As rectangle:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DisabledFill: =RGBA(0,0,0,0)
+            Fill: =RGBA(0,0,0,0)
+            FocusedBorderColor: =RGBA(98, 100, 167, 1)
+            Height: =32
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Parent)
+            PressedFill: =RGBA(0,0,0,0)
+            TabIndex: =0
+            Width: =148
+            ZIndex: =1
+
+        fecha_inicio As Etiqueta:
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =10.5
+            FontWeight: =FontWeight.Normal
+            Height: =24
+            OnSelect: =Select(Parent)
+            TabIndex: =-1
+            Text: =ThisItem.fecha
+            VerticalAlignment: =VerticalAlign.Top
+            Width: =148
+            X: =0
+            Y: =4
+            ZIndex: =2
+
+        Icon2 As icon.Cancel:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(98, 100, 167, 1)
+            DisabledBorderColor: =RGBA(243, 242, 241, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =32
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Cancel
+            OnSelect: =Remove(Fechas, ThisItem)
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(98, 100, 167, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =32
+            X: =116
+            ZIndex: =3
+
     fondo_Rojo As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -65,8 +131,8 @@ form_Reserva As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =32
-        X: =414
-        Y: =549
+        X: =292
+        Y: =594
         ZIndex: =9
 
     "'ico.reloj2' As icon.Clock":
@@ -88,18 +154,9 @@ form_Reserva As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =32
-        X: =610
-        Y: =549
+        X: =488
+        Y: =594
         ZIndex: =10
-
-    "Duración As 'Cuadro de texto'":
-        DisplayMode: =DisplayMode.Edit
-        Height: =25
-        Value: ="Duracion"
-        Width: =188
-        X: =258
-        Y: =601
-        ZIndex: =12
 
     tl_Experienza As Etiqueta:
         Alignment: =Align.Center
@@ -136,16 +193,16 @@ form_Reserva As screen:
     "Calendario As 'Selector de fecha'":
         AllowTextInput: =false
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        Height: =34
         IconFill: =RGBA(250, 50, 50, 0.87)
         IconSize: =20
         PCFTeamsTheme: =TeamsTheme.Default
         ShowGoToToday: =false
         Tooltip: =""
         Visible: =true
-        Width: =188
-        X: =59
-        Y: =549
+        Width: =138
+        X: =129
+        Y: =547
         ZIndex: =16
 
     "Salas As 'Cuadro combinado'.pcfdataset":
@@ -284,15 +341,15 @@ form_Reserva As screen:
         RadiusTopRight: =3
         Size: =10.5
         Width: =152
-        X: =458
-        Y: =549
+        X: =336
+        Y: =594
         ZIndex: =28
 
     Button1 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
-            =FlujoReserva.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Asistencia,Hora_Inicio,Hora_Final,Titulo_Reunión,salastext,Titulo_Reunión,Titulo_Reunión)
+            =FlujoReserva.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Asistencia,Hora_Inicio,Hora_Final,Titulo_Reunión,salastext,Titulo_Reunión,Titulo_Reunión,FECHA_INICIO,FECHA_INICIO,FECHA_INICIO,FECHA_INICIO)
         Text: ="Reservar"
         Width: =96
         X: =300
@@ -327,8 +384,8 @@ form_Reserva As screen:
         RadiusTopRight: =3
         Size: =10.5
         Width: =152
-        X: =262
-        Y: =549
+        X: =140
+        Y: =594
         ZIndex: =30
 
     "Correos As 'Cuadro combinado'.pcfdataset":
@@ -449,18 +506,6 @@ form_Reserva As screen:
         Y: =327
         ZIndex: =34
 
-    Label1 As Etiqueta:
-        DisplayMode: =DisplayMode.Edit
-        FontWeight: =FontWeight.Lighter
-        Height: =32
-        Text: |-
-            ="https://www.youtube.com/watch?v=X7pTa3_7WpI
-            https://learn.microsoft.com/es-mx/power-apps/maker/canvas-apps/create-update-collection"
-        Width: =320
-        X: =70
-        Y: =121
-        ZIndex: =35
-
     Button5 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =20
@@ -475,16 +520,47 @@ form_Reserva As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         Text: =Salas.Selected.'SALAS '
+        Visible: =false
         Width: =320
-        X: =737
-        Y: =553
+        X: =747
+        Y: =512
         ZIndex: =37
 
-    Label3 As Etiqueta:
+    fecha As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =32
+        OnSelect: |-
+            =Collect(
+                Fechas,
+                {
+                    fecha: Calendario.Value
+                }
+            )
+        Text: ="agregar"
+        Width: =96
+        X: =288
+        Y: =548
+        ZIndex: =40
+
+    FECHA_INICIO1 As Etiqueta:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: =fecha_inicio.Text
+        Visible: |
+            =false
         Width: =320
-        X: =737
-        Y: =585
-        ZIndex: =38
+        X: =871
+        Y: =505
+        ZIndex: =41
+
+    FECHA_INICIO As Etiqueta:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: =Text(DateValue(FECHA_INICIO1.Text),DateTimeFormat.LongDate)
+        Visible: |
+            =false
+        Width: =320
+        X: =874
+        Y: =547
+        ZIndex: =42
 

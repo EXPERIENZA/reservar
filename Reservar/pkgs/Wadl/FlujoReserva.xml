@@ -12,6 +12,10 @@
       <string name="ManualTriggerInput_Sendanemail_Cuerpo_1_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_1_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_2_def" />
+      <string name="ManualTriggerInput_Sendanemail_Cuerpo_2_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadeinicio_1_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__D_uxED_asdelasemanaseleccionadosElemento-1_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__D_uxED_asdelasemanaseleccionadosElemento-1_1_def" />
       <object name="ManualTriggerInput">
         <property name="Sendanemail_To" type="string" />
         <property name="Sendanemail_Subject" type="string" />
@@ -23,6 +27,10 @@
         <property name="Sendanemail_Cuerpo_1" type="string" />
         <property name="Crearevento(V4)_Asunto_1" type="string" />
         <property name="Crearevento(V4)_Asunto_2" type="string" />
+        <property name="Sendanemail_Cuerpo_2" type="string" />
+        <property name="Crearevento(V4)_Horadeinicio_1" type="string" />
+        <property name="Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1" type="string" />
+        <property name="Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1_1" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -46,6 +54,10 @@
             <param style="plain" name="Sendanemail_Cuerpo_1" path="/Sendanemail_Cuerpo_1" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Asunto_1" path="/Crearevento(V4)_Asunto_1" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Asunto_2" path="/Crearevento(V4)_Asunto_2" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail_Cuerpo_2" path="/Sendanemail_Cuerpo_2" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Horadeinicio_1" path="/Crearevento(V4)_Horadeinicio_1" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1" path="/Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1_1" path="/Crearevento(V4)_DíasdelasemanaseleccionadosElemento-1_1" type="xs:string" required="true" />
           </representation>
         </request>
       </method>

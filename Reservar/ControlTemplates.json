@@ -43,21 +43,6 @@
     "TemplateDisplayName": "Cuadro combinado",
     "Version": "1.5.0"
   },
-  "Cuadro de texto": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_TextBox",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_TextBox",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Cuadro de texto",
-    "Version": "1.6.1"
-  },
   "Etiqueta": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
