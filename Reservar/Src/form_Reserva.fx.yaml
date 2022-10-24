@@ -151,12 +151,13 @@ form_Reserva As screen:
     "Salas As 'Cuadro combinado'.pcfdataset":
         AllowMultiSelect: =false
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        Height: =34
         Items: =salas
         Text: ="Sala para reservar"
-        Width: =588
+        Visible: =true
+        Width: =582
         X: =60
-        Y: =506
+        Y: =503
         ZIndex: =17
 
         "'SALAS 3' As pcfDataField.textualColumn":
@@ -291,7 +292,7 @@ form_Reserva As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |
-            =Reservas_1.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Titulo_Reunión,Hora_Inicio,Hora_Final,CorreoGaleria,CorreoGaleria)
+            =FlujoReserva.Run(Asistencia,Titulo_Reunión,descripcion_Reunión,Asistencia,Hora_Inicio,Hora_Final,Titulo_Reunión,salastext,Titulo_Reunión,Titulo_Reunión)
         Text: ="Reservar"
         Width: =96
         X: =300
@@ -469,4 +470,21 @@ form_Reserva As screen:
         X: =300
         Y: =471
         ZIndex: =36
+
+    salastext As Etiqueta:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Text: =Salas.Selected.'SALAS '
+        Width: =320
+        X: =737
+        Y: =553
+        ZIndex: =37
+
+    Label3 As Etiqueta:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Width: =320
+        X: =737
+        Y: =585
+        ZIndex: =38
 

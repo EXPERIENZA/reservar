@@ -1,26 +1,28 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Reservas" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Reservas" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="FlujoReserva" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="FlujoReserva" />
   <grammars>
     <jsonTypes targetNamespace="https://brazil-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Sendanemail_To_def" />
       <string name="ManualTriggerInput_Sendanemail_Subject_def" />
       <string name="ManualTriggerInput_Sendanemail_Body_def" />
-      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_def" />
+      <string name="ManualTriggerInput_Sendanemail_Cuerpo_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadeinicio_def" />
       <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Horadefinalizaci_uxF3_n_def" />
-      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Ubicaci_uxF3_n_def" />
-      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Ubicaci_uxF3_n_1_def" />
-      <string name="ManualTriggerInput_Sendanemail_Cuerpo_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_def" />
+      <string name="ManualTriggerInput_Sendanemail_Cuerpo_1_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_1_def" />
+      <string name="ManualTriggerInput_Crearevento_ux28_V4_ux29__Asunto_2_def" />
       <object name="ManualTriggerInput">
         <property name="Sendanemail_To" type="string" />
         <property name="Sendanemail_Subject" type="string" />
         <property name="Sendanemail_Body" type="string" />
-        <property name="Crearevento(V4)_Asunto" type="string" />
+        <property name="Sendanemail_Cuerpo" type="string" />
         <property name="Crearevento(V4)_Horadeinicio" type="string" />
         <property name="Crearevento(V4)_Horadefinalización" type="string" />
-        <property name="Crearevento(V4)_Ubicación" type="string" />
-        <property name="Crearevento(V4)_Ubicación_1" type="string" />
-        <property name="Sendanemail_Cuerpo" type="string" />
+        <property name="Crearevento(V4)_Asunto" type="string" />
+        <property name="Sendanemail_Cuerpo_1" type="string" />
+        <property name="Crearevento(V4)_Asunto_1" type="string" />
+        <property name="Crearevento(V4)_Asunto_2" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -37,12 +39,13 @@
             <param style="plain" name="Sendanemail_To" path="/Sendanemail_To" type="xs:string" required="true" />
             <param style="plain" name="Sendanemail_Subject" path="/Sendanemail_Subject" type="xs:string" required="true" />
             <param style="plain" name="Sendanemail_Body" path="/Sendanemail_Body" type="xs:string" required="true" />
-            <param style="plain" name="Crearevento(V4)_Asunto" path="/Crearevento(V4)_Asunto" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail_Cuerpo" path="/Sendanemail_Cuerpo" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Horadeinicio" path="/Crearevento(V4)_Horadeinicio" type="xs:string" required="true" />
             <param style="plain" name="Crearevento(V4)_Horadefinalización" path="/Crearevento(V4)_Horadefinalización" type="xs:string" required="true" />
-            <param style="plain" name="Crearevento(V4)_Ubicación" path="/Crearevento(V4)_Ubicación" type="xs:string" required="true" />
-            <param style="plain" name="Crearevento(V4)_Ubicación_1" path="/Crearevento(V4)_Ubicación_1" type="xs:string" required="true" />
-            <param style="plain" name="Sendanemail_Cuerpo" path="/Sendanemail_Cuerpo" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Asunto" path="/Crearevento(V4)_Asunto" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail_Cuerpo_1" path="/Sendanemail_Cuerpo_1" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Asunto_1" path="/Crearevento(V4)_Asunto_1" type="xs:string" required="true" />
+            <param style="plain" name="Crearevento(V4)_Asunto_2" path="/Crearevento(V4)_Asunto_2" type="xs:string" required="true" />
           </representation>
         </request>
       </method>

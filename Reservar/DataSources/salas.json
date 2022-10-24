@@ -1,16 +1,95 @@
 [
   {
-    "Data": "[{\"SALAS \":\"Sala de juntas\"},{\"SALAS \":\"Sala de reuniones \"},{\"SALAS \":\"Sala de capacitaciones \"}]",
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr835_salases",
+    "IsHidden": false,
     "IsSampleData": false,
-    "IsWritable": false,
-    "Name": "salas",
-    "OrderedColumnNames": [
-      "SALAS "
-    ],
-    "OriginalName": "salas",
-    "OriginalSchema": "*['SALAS ':s]",
-    "Schema": "*['SALAS ':s]",
-    "Token": "dummyToken",
-    "Type": "StaticDataSourceInfo"
+    "IsWritable": true,
+    "LogicalName": "cr835_salas",
+    "MaxGetRowsCount": 500,
+    "Name": "SALAS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr835_nombre": "sala",
+      "cr835_salas_AsyncOperations": "System Jobs",
+      "cr835_salas_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr835_salas_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr835_salas_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr835_salas_ProcessSession": "Process Sessions",
+      "cr835_salas_SyncErrors": "Sync Errors",
+      "cr835_salasid": "SALAS",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SALAS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SALAS (Vistas)",
+    "Name": "_cr835_salas_views",
+    "RelatedEntityName": "SALAS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4f89e40d-9e57-4c05-b9a8-6076a210d278": "Active SALAS",
+      "5116c5cf-d4c8-4156-8c9f-4a7a4cc84378": "SALAS Advanced Find View",
+      "8da04dc5-ee5f-4687-8081-f70d283834b5": "SALAS Lookup View",
+      "aa211e61-9c56-4f96-867c-c075ef14467d": "Inactive SALAS",
+      "c0eefdbd-79c5-4955-abc9-b5f1d2e8646b": "SALAS Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (SALAS)",
+    "Name": "cr835_salas_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SALAS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SALAS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SALAS)",
+    "Name": "cr835_salas_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SALAS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SALAS",
+    "Type": "OptionSetInfo"
   }
 ]
