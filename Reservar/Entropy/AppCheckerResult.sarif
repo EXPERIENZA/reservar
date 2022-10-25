@@ -464,66 +464,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "form_Reserva",
-                "type": "form_Reserva.Hora_Inicio"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "form_Reserva",
-                "type": "form_Reserva.Hora_Final"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "form_Reserva.Gallery2.AccessibleLabel"
                 }
               ],
@@ -537,36 +477,6 @@
                 "member": "AccessibleLabel",
                 "module": "form_Reserva",
                 "type": "form_Reserva.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "form_Reserva",
-                "type": "form_Reserva.Button1"
               }
             }
           ],
@@ -644,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.fecha.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.Gallery2.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "form_Reserva.fecha.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.Gallery2.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "form_Reserva",
-                "type": "form_Reserva.fecha"
+                "type": "form_Reserva.Gallery2.Icon2"
               }
             }
           ],
@@ -704,19 +614,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "form_Reserva.Gallery2.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "form_Reserva.fecha.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "form_Reserva.Gallery2.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "form_Reserva.fecha.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "form_Reserva",
-                "type": "form_Reserva.Gallery2.Icon2"
+                "type": "form_Reserva.fecha"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "form_Reserva.Hora_Inicio.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "form_Reserva",
+                "type": "form_Reserva.Hora_Inicio"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "form_Reserva.Hora_Final.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "form_Reserva",
+                "type": "form_Reserva.Hora_Final"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "form_Reserva.Button1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "form_Reserva",
+                "type": "form_Reserva.Button1"
               }
             }
           ],

@@ -52,7 +52,7 @@ form_Reserva As screen:
             Height: =24
             OnSelect: =Select(Parent)
             TabIndex: =-1
-            Text: =ThisItem.fecha
+            Text: =Text(ThisItem.fecha)
             VerticalAlignment: =VerticalAlign.Top
             Width: =148
             X: =0
@@ -520,10 +520,10 @@ form_Reserva As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         Text: =Salas.Selected.'SALAS '
-        Visible: =false
+        Visible: =true
         Width: =320
-        X: =747
-        Y: =512
+        X: =696
+        Y: =412
         ZIndex: =37
 
     fecha As Botón:
@@ -547,10 +547,10 @@ form_Reserva As screen:
         Height: =32
         Text: =fecha_inicio.Text
         Visible: |
-            =false
+            =true
         Width: =320
-        X: =871
-        Y: =505
+        X: =696
+        Y: =493
         ZIndex: =41
 
     FECHA_INICIO As Etiqueta:
@@ -558,9 +558,9 @@ form_Reserva As screen:
         Height: =32
         Text: =Text(DateValue(FECHA_INICIO1.Text),DateTimeFormat.LongDate)
         Visible: |
-            =false
+            =true
         Width: =320
-        X: =874
-        Y: =547
+        X: =696
+        Y: =543
         ZIndex: =42
 
